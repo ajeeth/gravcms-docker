@@ -1,5 +1,7 @@
 # Grav Docker container
 
+Thanks to https://github.com/benjick for his great work!
+
 ## Usage
 
 ### First way
