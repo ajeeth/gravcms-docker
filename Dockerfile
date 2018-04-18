@@ -26,7 +26,9 @@ RUN curl -o grav.tar.gz -SL https://github.com/getgrav/grav/archive/${GRAV_VERSI
 	&& tar -xzf grav.tar.gz -C /tmp \
 	&& rsync -a /tmp/grav-${GRAV_VERSION}/ /var/www/html --exclude user \
 	&& /var/www/html/bin/grav install \
-	&& chown -R www-data:www-data /var/www/html
+	&& chown -R www-data:www-data /var/www/html \
+	&& git config --global user.email "grav@getgrav.org" \
+	&& git config --global user.name "grav"
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
