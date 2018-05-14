@@ -15,7 +15,7 @@ docker run \
   -p 3030:80 \
   --name mygrav -d nmonst4/gravcms
 # Installs the default theme 'antimatter'
-docker exec mygrav bin/gpm install antimatter
+docker exec --user www-data mygrav bin/gpm install antimatter
 ```
 
 Now you can go to localhost:3030 and see your page in action.
