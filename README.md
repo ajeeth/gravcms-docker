@@ -13,7 +13,7 @@ A folder called `user` will be created in the same folder as you are running thi
 docker run \
   -v $(pwd)/user:/var/www/html/user \
   -p 3030:80 \
-  --name mygrav -d nmonst4/gravcms
+  --name mygrav -d nmonst4/gravcms-docker
 # Installs the default theme 'antimatter'
 docker exec --user www-data mygrav bin/gpm install antimatter
 ```
@@ -27,7 +27,7 @@ rm -rf ./user/.git
 docker run \
   -v $(pwd)/user:/var/www/html/user \
   -p 3030:80 \
-  --name mygrav -d nmonst4/gravcms
+  --name mygrav -d nmonst4/gravcms-docker
 ```
 
 ### Second way
@@ -35,7 +35,7 @@ docker run \
 If you want to push your app to a registry this might be what your `Dockerfile` looks like
 
 ```
-FROM nmonst4/gravcms:latest
+FROM nmonst4/gravcms-docker:latest
 COPY ./user /var/www/html/user
 ```
 
