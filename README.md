@@ -51,3 +51,17 @@ Where `user` is the user-folder for your Grav site
 #### For Mac
 
 https://github.com/adlogix/docker-machine-nfs
+
+## Build from Repo 
+
+Clone Repo and navigate into the repo folder.
+
+### Build
+```bash
+docker build -t myapp .
+```
+
+### Run
+```bash
+docker run -p 3030:80 --name mygrav -d myapp
+```
