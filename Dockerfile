@@ -25,7 +25,7 @@ RUN { \
                 echo 'upload_max_filesize=25M'; \
         } > /usr/local/etc/php/conf.d/custom-default.ini
 
-ENV GRAV_VERSION 1.4.7
+ENV GRAV_VERSION 1.4.8
 RUN curl -o grav.tar.gz -SL https://github.com/getgrav/grav/archive/${GRAV_VERSION}.tar.gz \
 	&& mkdir -p /tmp/grav \
 	&& tar -xzf grav.tar.gz -C /tmp \
