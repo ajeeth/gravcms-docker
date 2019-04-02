@@ -1,4 +1,4 @@
-# Grav Docker container
+# Grav Docker Container
 
 Thanks to https://github.com/benjick for his great work! Here https://hub.docker.com/r/benjick/grav/
 
