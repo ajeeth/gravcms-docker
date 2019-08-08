@@ -23,6 +23,7 @@ RUN { \
 
 RUN { \
                 echo 'upload_max_filesize=25M'; \
+		echo 'post_max_size=25M'; \
         } > /usr/local/etc/php/conf.d/custom-default.ini
 
 ENV GRAV_VERSION 1.6.9
